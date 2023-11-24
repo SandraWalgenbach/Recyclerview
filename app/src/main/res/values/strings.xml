@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Recyclerview</string>
+
+    <string name="name1">Brod</string>
+    <string name="name2">Milch</string>
+    <string name="name3">Wurst</string>
+    <string name="name4">Käse</string>
+    <string name="name5">Kornflakes</string>
+    <string name="name6">Nutella</string>
+
 </resources>

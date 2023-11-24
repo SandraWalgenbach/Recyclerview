@@ -7,6 +7,9 @@ android {
     namespace = "com.example.recyclerview"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.example.recyclerview"
