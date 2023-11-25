@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,7 +18,7 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/Arrow_IB"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Hinzufügen_IB"
         app:layout_constraintStart_toEndOf="@+id/Arrow_IB"
         app:layout_constraintTop_toTopOf="@+id/Arrow_IB" />
 
@@ -32,7 +34,7 @@
         app:srcCompat="@drawable/baseline_arrow_back" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mainRV"
+        android:id="@+id/main_RV"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
@@ -42,7 +44,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Einkaufsliste_TV"
         app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/list_item"
-        tools:layout_editor_absolutX="1dp"/>
+        tools:layout_editor_absolutX="1dp"
+        tools:listitem="@layout/list_item" />
+
+    <ImageButton
+        android:id="@+id/Hinzufügen_IB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/Einkaufsliste_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Einkaufsliste_TV"
+        app:srcCompat="@drawable/baseline_add_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

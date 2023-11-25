@@ -22,7 +22,8 @@ class WareAdapter(val dataset: List<Ware>): RecyclerView.Adapter<WareAdapter.War
     override fun onBindViewHolder(holder: WareViewHolder, position: Int){
         val ware = dataset[position]
 
-        holder.binding.textView.setText(ware.gegenstand)
+        holder.binding.TV.setText(ware.gegenstand)
+
     }
 
 }

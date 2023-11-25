@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val mainRV=findViewById<RecyclerView>(R.id.mainRV)
+        val mainRV=findViewById<RecyclerView>(R.id.main_RV)
 
-        val warenListe=Datasource().loadData()
-        val adapter= WareAdapter(warenListe)
+        val warenListe = Datasource().loadData()
+        val adapter = WareAdapter(warenListe)
         mainRV.adapter = adapter
     }
 }
